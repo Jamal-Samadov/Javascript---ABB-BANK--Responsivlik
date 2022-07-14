@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ABB-top{
+    background-color: #e6d6d6;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 15px;
+}
+
+.ABB-top .top-left{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.container{
+    padding: 0 4rem;
+}
+
+.top-left p{
+    padding: 0px 23px;
+}
+
+.ABB-top .top-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-right{
+    position: relative;
+}
+
+.top-right p{
+    margin-left: 30px;
+}
+#phone{
+    margin-right: -25px;
+    margin-left: 25px;
+}
+#lupa{
+    margin-right: -25px;
+    margin-left: 25px;
+}
+
+
+.top-left a{
+    background: white;
+    padding: 10px 37px;
+    border-radius: 24px;
+    text-decoration: none;
+    color: blue;    
+    transition: .5s;
+}
+
+.top-left a:hover {
+    color: white;
+    background-color: blue
+} 
+
+.ABB-center{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 10px 12px;
+    
+}
+
+.phone-right{
+    display: none;
+}
+
+
+.ABB-center .center-left{
+    width: 60%;
+    display: flex;
+    align-items: center;  
+    
+}
+
+.center-right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    color: blue;
+}
+.ABB-center .center-left img{
+    margin: 0px 41px;
+    padding-top: 30px;
+}
+
+.ABB-bottom{
+    display: flex;
+    align-items: center; 
+}
+.ABB-bottom P{
+    padding-top: 30px;
+    margin: 0px 15px 50px;
+}
+
+.top-phone{
+   display: none;
+   margin-left: 7px;
+}
+.center-right i{
+    margin-right: 11px;
+    font-size: 26px;
+}
+
+
+@Media(max-width:576px) {
+    .ABB .ABB-Head .ABB-top .top-left{
+        display: none;
+    }
+   
+    .ABB .ABB-Head .ABB-top .top-phone{
+       display: block;
+       align-items: center;
+       display: flex;  
+    }
+    .top-phone p{
+        margin-left: 7px;
+    }
+    .ABB .ABB-center .center-right {
+         display: none;
+    }
+    .ABB .ABB-center .center-left{
+        display: none;
+   }
+    .ABB .ABB-Head .ABB-center .center-right .phone-right{
+       display: block;
+       align-items: center;
+       display: flex; 
+    }
+
+    .ABB .ABB-Head .ABB-bottom{
+        display: none;
+    }
+    .phone-right{
+        display: block;
+        align-items: center;
+        display: flex; 
+        padding: 2rem;
+        justify-content: space-between;
+    }
+    .phone-right i{
+        font-size: 25px;
+    }
+   body{
+    overflow: hidden;
+   }
+
+}   
+
+.ham-menu{
+    background-color: aqua;
+    display: none;
+    transition: 1s;
+
+}
+.ham-menu span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-size: 18px;
+    padding: 0 1rem ;
+    margin-top: 20px;
+    transition: 1s;
+
+}
+.ham-menu i{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 0 1rem ;
+    margin-top: 20px;
+    transition: 1s;
+
+}
+
+i{
+    cursor: pointer;
+}
+
+#lang img{
+    width: 8%;
+    margin-right: 10px;
+}
+#lang{
+    position: absolute;
+    top: 69px;
+    text-align: right;
+    right: 113px;
+    width: 100%;
+    display: none;
+    transition: .5s;
+}
+#sear1 input{
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+}
+#sear1{
+    position: absolute;
+    top: 59px;
+    right: 172px;
+    display: none;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: -67px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+
+  .activee{
+    display: block !important;
+  }
